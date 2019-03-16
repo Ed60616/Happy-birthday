@@ -1,35 +1,97 @@
-<!DOCTYPE html>
-<html>
-<title>W3.CSS Template</title>
+﻿<!DOCTYPE html>
+
+<title>Happy Birthday!</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animations/2.1/css/animations.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <style>
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-.bgimg {
-  background-image: url('/w3images/forestbridge.jpg');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-}
+    body {
+        font-family: "Times New Roman", Georgia, Serif;
+    }
+
+    h1, h2, h3, h4, h5, h6, p {
+        font-family: "Microsoft JhengHei";
+        letter-spacing: 5px;
+    }
+</style>
+<style>
+    body, h1 {
+        font-family: "Raleway", sans-serif
+    }
+
+    body, html {
+        height: 100%
+    }
+
+    .bgimg {
+        background-image: url("patrick.jpg");
+        min-height: 100%;
+        background-position: center;
+        background-size: cover;
+    }
+
+    @media (max-width: 375px) {
+        homepage {
+            margin: auto;
+            width: 40%
+        }
+    }
 </style>
 <body>
 
-<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
-  <div class="w3-display-topleft w3-padding-large w3-xlarge">
-    Logo
-  </div>
-  <div class="w3-display-middle">
-    <h1 class="w3-jumbo w3-animate-top">COMING SOON</h1>
-    <hr class="w3-border-grey" style="margin:auto;width:40%">
-    <p class="w3-large w3-center">35 days left</p>
-  </div>
-  <div class="w3-display-bottomleft w3-padding-large">
-    Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
-  </div>
-</div>
+    <div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+
+        <div class="w3-display-middle">
+            <h1 class="w3-jumbo w3-animate-top">Happy</h1>
+            <h1 class="w3-jumbo w3-animate-top">ST. Patrick Day!</h1>
+
+            <hr class="w3-border-grey " style="margin: auto;width: 40%">
+            <p class="w3-large w3-center">2019/03/17</p>
+
+            <center>
+                <a href="#card" class="btn btn-danger" onclick="alert('姍姍生日快樂!')">
+                    <span class="glyphicon glyphicon-hand-down" aria-hidden="true"></span> Learn more
+                </a>
+            </center>
+        </div>
+
+    </div>
+    <div class="w3-content" style="max-width:1100px">
+
+        <div class="w3-row" style="" id="card">
+            <div class="w3-col l6 w3-padding-large">
+                <h1>Surprise~HBD~</h1>
+                <p class="w3-text-grey">
+                    燈稜!不知道這個網頁有沒有讓妳驚喜到XD 因為我美工很糟、寫字很醜, 只好用我會的技能寫一個簡單的網頁當作生日卡片~ :D
+                </p>
+                <p class="w3-text-grey">
+                    最近真的辛苦啦~做不完的實驗跟快要到的答辯, 要保重身體阿!我相信以妳強大兇殘的能力最終都可以解決這些問題的!如果想找人聊天或吃飯記得揪我喔, 我還有很多妳的口袋名單沒吃到嘿嘿.
+                </p>
+                <p class="w3-text-grey">
+                    最後我想說, 有妳當室友真的很開心, 謝謝妳常常照顧我、推薦我好吃的好用的, 還得一直被我騷擾, 強行尬聊XD(來這邊學到的新中文),
+                    說真的讓我更快的融入芝加哥生活.
+                </p>
+                <p class="w3-text-grey">姊生日快樂拉~ </p>
+                <p class="w3-text-grey">祝妳心想事成、一切順利!</p>
+            </div>
+            <div class="w3-col l6 w3-padding-large">
+                <img src="IMG_9781.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="w3-center w3-light-grey w3-padding-32">
+        <p>Powered by 品涵</p>
+    </footer>
 
 </body>
-</html>
